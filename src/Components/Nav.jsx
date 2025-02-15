@@ -10,13 +10,13 @@ const Nav = () => {
   const dispatch = useDispatch();
 
   return (
-    <nav className='w-full flex items-center justify-between bg-zinc-300 mb-5 border-b-slate-300 border-2 p-3 fixed'>
-        <Link to='/' className="md:text-3xl font-bold">BAAZAAR</Link>
+    <nav className='w-full flex items-center justify-between bg-zinc-300 mb-5 border-b-slate-300 border-2 p-2 fixed'>
+        <Link to='/' className="md:text-2xl font-semibold">BAAZAAR</Link>
         <div>
-        <Link to='/' className="text-xl font-semibold">About</Link>
-        <Link to='/' className="text-xl font-semibold mx-3">Contact</Link>
-        <Link to='/' className="text-xl font-semibold">Services</Link>
-        <Link to='/' className="text-xl font-semibold ml-3">Login</Link>
+        <Link to='/about' className="text-xl">About</Link>
+        <Link to='/contact' className="text-xl mx-3">Contact</Link>
+        <Link to='/services' className="text-xl">Services</Link>
+        <Link to='/login' className="text-xl ml-3">Login</Link>
         </div>
 
         <div className='h-10 w-10 rounded-full flex items-center justify-center bg-gray-100 relative hover:cursor-pointer' onClick={()=> dispatch(toggleCartTab())}>
